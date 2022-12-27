@@ -155,12 +155,6 @@ let playVideo = async () => {
 
 app.get('/', (req, res) => {
   playVideo();
-  // for (let i = 1; i <= 8; i++) {
-  //   pixelate(`frames/mod_frame_${i}.jpg`);
-  //   draw();
-  //   setTimeout(() => {
-  //   }, 10000);
-  // }
   res.send("hi");
     // res.sendFile(__dirname + '/static/index.html');
 })
